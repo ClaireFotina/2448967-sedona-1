@@ -560,24 +560,22 @@
   width: 452px;
   min-height: 51px;
   padding-left: 21px;
-  border: none;
+  border: transparent solid 2px;
   border-radius: 4px 0 0 4px;
   box-sizing: border-box;
 }
 
 .email:hover {
-  outline: #68a2ca solid 2px;
-
+  border: #68a2ca solid 2px;
 }
 
 .email:focus {
-  outline: #68a2ca solid 2px;
-
+  outline: none;
+  border: #68a2ca solid 2px;
 }
 
 .email:active {
-  outline: #3f5e72 solid 2px;
-
+  border: #3f5e72 solid 2px;
 }
 
 .subscribe-button {
@@ -947,7 +945,7 @@
   height: 48px;
   background: #f2f2f2;
   border-radius: 4px 0 0 4px;
-  border: none;
+  border: transparent solid 3px;
   box-sizing: border-box;
   padding: 12px 21px;
   color: #000000;
@@ -961,21 +959,19 @@
 .cost-from:focus {
   outline: none;
   border: #82b3d3 solid 3px;
-  border-radius: 4px;
 }
 
 .cost-from:active {
   outline: none;
   border: #000000 solid 3px;
-  border-radius: 4px;
 }
 
 .cost-till {
-  width: 145px;
+  width: 143px;
   height: 48px;
   background: #f2f2f2;
   border-radius: 0 4px 4px 0;
-  border: none;
+  border: solid 3px transparent;
   box-sizing: border-box;
   padding: 12px 22px;
   color: #000000;
@@ -990,13 +986,11 @@
 .cost-till:focus {
   outline: none;
   border: #82b3d3 solid 3px;
-  border-radius: 4px;
 }
 
 .cost-till:active {
   outline: none;
   border: #000000 solid 3px;
-  border-radius: 4px;
 }
 
 .catalog-filter-from {
@@ -1180,18 +1174,15 @@
 
 .select-control:hover {
   border: #68a2ca solid 2px;
-  border-radius: 4px;
 }
 
 .select-control:focus {
   outline: none;
   border: #68a2ca solid 2px;
-  border-radius: 4px;
 }
 
 .select-control:active {
   border: #3f5e72 solid 2px;
-  border-radius: 4px;
 }
 
 .button-cards {
@@ -1596,21 +1587,22 @@
   width: 452px;
   min-height: 51px;
   padding-left: 21px;
-  border: none;
+  border: transparent solid 2px;
   border-radius: 4px 0 0 4px;
   box-sizing: border-box;
 }
 
 .email-catalog:hover {
-  outline: #68a2ca solid 2px;
+  border: #68a2ca solid 2px;
 }
 
 .email-catalog:focus {
-  outline: #68a2ca solid 2px;
+  outline: none;
+  border: #68a2ca solid 2px;
 }
 
 .email-catalog:active {
-  outline: #3f5e72 solid 2px;
+  border: #3f5e72 solid 2px;
 }
 
 .phone-button-catalog {
@@ -1650,21 +1642,40 @@
 
 .modal-content {
   margin: 0;
-  padding: 64px 69px 0 70px;
+  padding: 64px 69px 71px 70px;
   position: relative;
 }
+
 .close-button {
-  background-color: #e6e6e6;
+  background-color: #f2f2f2;
   width: 52px;
   height: 52px;
   border-radius: 26px;
   border: none;
-  background-image: url(../images/close.svg);
-  background-position: center;
-  background-repeat: no-repeat;
- position: absolute;
- top: 65px;
- right: 52px;
+  position: absolute;
+  top: 64px;
+  right: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-button:hover {
+  background-color: #e6e6e6;
+  cursor: pointer;
+}
+
+.close-button:focus {
+  outline: #83b3d3 solid 3px;
+  background-color: #e6e6e6;
+}
+
+.close-button:active {
+  background-color: #e6e6e6;
+}
+
+.close-button:active .cross {
+  opacity: 0.3;
 }
 
 .modal-title {
@@ -1678,7 +1689,7 @@
 }
 
 
-.container-arrival{
+.container-arrival {
   margin: 0;
   padding: 0;
   display: flex;
@@ -1694,17 +1705,36 @@
 .date {
   font-family: "PT Sans", "Arial", sans-serif;
   box-sizing: border-box;
-    background-color: #f2f2f2;
-    padding: 13px 23px 11px 20px;
-    border: none;
-    border-radius: 4px;
-    width: 441px;
-    min-height: 48px;
-    color: #000000;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 19px;
-    margin-bottom: 4px;
+  background-color: #f2f2f2;
+  padding: 12px 23px 11px 20px;
+  border: none;
+  border-radius: 4px;
+  width: 441px;
+  min-height: 48px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 19px;
+  margin-bottom: 4px;
+  background-image: url("../images/date.svg");
+  background-size: 16px 15px;
+  background-repeat: no-repeat;
+  background-position:  402px 16px;
+}
+
+.date:hover {
+  background-color: #e6e6e6;
+}
+
+.date:focus {
+  outline: #82b3d3 solid 3px;
+  background-color: #e6e6e6;
+}
+
+.date:active {
+  background-color: #e6e6e6;
+  outline: #000000 solid 2px;
+
 }
 
 .arrival-comment {
@@ -1730,40 +1760,222 @@
 
 .container-people {
   display: flex;
-  gap: 50px;
-  margin-bottom: 61px;
+  gap: 87px;
+  margin-bottom: 47px;
 }
 
 .people {
   display: flex;
-  justify-content: space-between;
+  gap: 46px;
+}
+
+.people-children {
+  display: flex;
+}
+
+.people-form {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 49px;
 }
 
 .container-number {
   display: flex;
-  justify-content: space-between;
 }
 
-.adult {
-  width: 25px;
+.minus {
+  border: none;
+  width: 40px;
+    height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+border-radius: 4px 0 0 4px;
 }
+
+.less {
+  opacity: 0.3;
+}
+
+.minus:hover .less {
+ opacity: 1.0;
+}
+
+.minus:focus {
+  outline: none;
+  border: #82b3d3 solid 3px;
+  border-radius: 4px;
+}
+
+.minus:active {
+  border: none;
+}
+
+.minus:active .less {
+  border: none;
+  opacity: 0.3;
+}
+
+.adult{
+  background-color: #f2f2f2;
+  font-family: "PT Sans", "Arial", sans-serif;
+  width: 31px;
+  height: 48px;
+  border: none;
+  box-sizing: border-box;
+  color: #000000;
+  padding: 1px 0 0 10px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.adult:focus {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.plus {
+  width: 40px;
+  height: 48px;
+display: flex;
+justify-content: center;
+align-items: center;
+border: none;
+border-radius: 0 4px 4px 0;
+}
+
+.more {
+  opacity: 0.3;
+}
+
+.plus:hover .more {
+  opacity: 1.0;
+ }
+
+ .plus:focus {
+   outline: none;
+   border: #82b3d3 solid 3px;
+   border-radius: 4px;
+ }
+
+ .plus:active {
+border:none;
+ }
+ .plus:active .more {
+   opacity: 0.3;
+ }
 
 .children {
-  width: 25px;
+  background-color: #f2f2f2;
+  font-family: "PT Sans", "Arial", sans-serif;
+  width: 31px;
+  height: 48px;
+  border: none;
+  box-sizing: border-box;
+  color: #000000;
+  padding: 1px 0 0 10px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.children:focus {
+  outline: none;
+}
+
+
+.tultip {
+  margin: 10px 0 0 5px;
+  position: relative;
+}
+
+.button-tultip {
+  border: none;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+
+.tultip-container {
+display:  none;
+position: absolute;
+top: 31px;
+left: -109px;
+padding-top: 11px;
+}
+
+.tultip-text {
+  font-family: "PT Sans", "Arial", sans-serif;
+      background-color: #333333;
+      color: #ffffff;
+      width: 256px;
+      min-height: 143px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      border: none;
+      display: block;
+      box-sizing: border-box;
+      padding: 21px 22px;
+      border-radius: 10px;
+      position: relative;
+      box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.tultip-text::before {
+  position: absolute;
+  content: "";
+  top: -9px;
+  left: 118px;
+  background-image: url("../images/trigonum.svg") ;
+  width: 19px;
+  height: 9px;
+}
+
+.tultip:hover .tultip-container {
+  display: block;
+}
+
+.button-tultip:focus {
+  outline: none;
+}
+
+.tultip:focus-within  .tultip-container {
+  display: block;
 }
 
 .modal-button {
   font-family: "PT Sans", "Arial", sans-serif;
-    box-sizing: border-box;
-    background-color: #83B3D3;
-    padding: 19px 23px 18px 20px;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 10px;
-    width: 577px;
-    min-height: 60px;
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 19px;
+  box-sizing: border-box;
+  background-color: #83B3D3;
+  padding: 19px 23px 18px 20px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  width: 577px;
+  min-height: 60px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 19px;
+}
+
+.modal-button:hover {
+  background-color: #68a2ca;
+}
+
+.modal-button:focus {
+  outline: none;
+  background-color: #68a2ca;
+}
+
+.modal-button:active {
+  background-color: #68a2ca;
+  opacity: 0.3;
 }
