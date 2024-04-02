@@ -1695,12 +1695,14 @@
   padding: 0;
   display: flex;
   justify-content: space-between;
+  width: 578px;
 }
 
 .container-comment {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  width: 441px;
 }
 
 .label-modal-form {
@@ -1708,6 +1710,7 @@
   font-weight: 700;
   line-height: 26px;
   margin-top: 11px;
+  width: 120px;
 }
 
 .date {
