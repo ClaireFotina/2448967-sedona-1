@@ -176,67 +176,81 @@
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <button class="close-button" type="close">
-            <svg class="cross" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479 1.78288L6.19817 7.49057L0.490479 13.1983L1.78279 14.4906L7.49048 8.78288L13.1982 14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z" fill="black"/>
-              </svg>
+            <svg class="cross" width="15" height="15" viewBox="0 0 15 15" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479 1.78288L6.19817 7.49057L0.490479 13.1983L1.78279 14.4906L7.49048 8.78288L13.1982 14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z"
+                fill="black" />
+            </svg>
           </button>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="container-arrival">
+            <div class="container-date">
               <label class="label-modal-form" for="arrival-date">Дата Заезда:</label>
-              <input class="date" type="text" id="arrival-date" name="arrival-date" value="27 апреля 2020" placeholder="Укажите дату">
+              <div class="container-comment">
+                <input class="date" type="text" id="arrival-date" name="arrival-date" value="27 апреля 2020"
+                  placeholder="Укажите дату">
+                <p class="date-comment">Мы не можем отправить вас в прошлое.</p>
+              </div>
             </div>
-            <p class="arrival-comment">Мы не можем отправить вас в прошлое.</p>
-            <div class="container-departure">
+            <div class="container-date">
               <label class="label-modal-form" for="departure-date">Дата Выезда:</label>
-              <input class="date" type="text" id="departure-date" name="departure-date" value="1 cентября 2023" placeholder="Укажите дату">
+              <div class="container-comment">
+                <input class="date" type="text" id="departure-date" name="departure-date" value="1 cентября 2023"
+                  placeholder="Укажите дату">
+                <p class="date-comment date-comment-departure">На эти даты есть свободные номера. Пока есть.</p>
+              </div>
             </div>
-            <p class="departure-comment">На эти даты есть свободные номера. Пока есть.</p>
             <div class="container-people">
               <div class="people">
                 <label class="people-form" for="adult">Взрослые:</label>
                 <div class="container-number">
                   <button class="minus" type="button">
-                    <svg class="less" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3 9V11H17V9H3Z" fill="currentColor"/>
-                      </svg>
+                    <svg class="less" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9V11H17V9H3Z" fill="currentColor" />
+                    </svg>
                     </svg>
                   </button>
                   <input class="adult" type="number" min="0" id="adult" placeholder="2">
                   <button class="plus" type="button">
-                    <svg class="more" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor"/>
-                      </svg>
+                    <svg class="more" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" />
+                    </svg>
                   </button>
                 </div>
               </div>
               <div class="people">
-              <div class="people-children">
-                <label class="people-form" for="children">Дети:</label>
-                <span class="tultip">
-                  <button class="button-tultip" type="button">
-                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="13" cy="13" r="13" fill="#83B3D3" />
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
-                        fill="white" />
-                    </svg>
-                  </button>
-                  <span class="tultip-container">
-                    <span class="tultip-text"> Укажите количество детей,<br>которые будут с вами, возраст<br>которых от 6 до 18 лет. Дети<br>до 6 лет размещаются<br>бесплатно.
+                <div class="people-children">
+                  <label class="people-form" for="children">Дети:</label>
+                  <span class="tultip">
+                    <button class="button-tultip" type="button">
+                      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
+                          fill="white" />
+                      </svg>
+                    </button>
+                    <span class="tultip-container">
+                      <span class="tultip-text"> Укажите количество детей,<br>которые будут с вами, возраст<br>которых
+                        от 6 до 18 лет. Дети<br>до 6 лет размещаются<br>бесплатно.
+                      </span>
                     </span>
                   </span>
-                </span>
-              </div>
+                </div>
                 <div class="container-number">
                   <button class="minus" type="button">
-                    <svg class="less" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3 9V11H17V9H3Z" fill="currentColor"/>
-                      </svg>
+                    <svg class="less" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9V11H17V9H3Z" fill="currentColor" />
+                    </svg>
                   </button>
                   <input class="children" type="number" min="0" id="adult" placeholder="2">
                   <button class="plus" type="button">
-                    <svg class="more" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor"/>
-                      </svg>
+                    <svg class="more" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" />
+                    </svg>
                   </button>
                 </div>
               </div>
