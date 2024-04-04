@@ -1828,7 +1828,9 @@
   border: #82b3d3 solid 3px;
 }
 
-.minus:active {}
+.minus:active::after {
+  border: none;
+}
 
 .minus:active .less {
   opacity: 0.3;
@@ -1846,10 +1848,16 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
+  cursor: pointer;
+}
+
+.adult:hover {
+  background-color: #e6e6e6;
 }
 
 .adult:focus {
   outline: none;
+  border: #82b3d3 solid 3px;
 }
 
 input::-webkit-outer-spin-button,
@@ -1894,7 +1902,9 @@ input::-webkit-inner-spin-button {
   border: #82b3d3 solid 3px;
 }
 
-.plus:active {}
+.plus:active::after {
+  border: none;
+}
 
 .plus:active .more {
   opacity: 0.3;
@@ -1912,10 +1922,16 @@ input::-webkit-inner-spin-button {
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
+  cursor: pointer;
+}
+
+.children:hover {
+  background-color: #e6e6e6;
 }
 
 .children:focus {
   outline: none;
+  border: #82b3d3 solid 3px;
 }
 
 
