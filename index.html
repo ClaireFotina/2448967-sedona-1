@@ -5,13 +5,15 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
 
   <body class="body">
     <div class="container">
       <header class="main-header">
         <a href="./index.html" class="logo-link">
-          <img class="logo-image" src="./images/logo.svg" alt="Логотип сайта города Седона">
+          <img class="logo-image" src="./images/logo.svg" width="140" height="70" alt="Логотип сайта города Седона">
         </a>
         <nav class="nav">
           <ul class="main-menu">
@@ -27,7 +29,7 @@
           </ul>
           <ul class="user-menu">
             <li class="user-menu-item">
-              <a href="#" class="user-menu-link-search">
+              <a href="#" class="user-menu-link-search" aria-label="Поиск">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M19.5 18.0083L15.8 14.3287C16.8 13.0359 17.5 11.3453 17.5 9.4558C17.5 5.08011 13.9 1.5 9.5 1.5C5.1 1.5 1.5 5.17956 1.5 9.55525C1.5 13.9309 5.1 17.511 9.5 17.511C11.3 17.511 13 16.9144 14.4 15.8204L18.1 19.5L19.5 18.0083ZM9.5 15.5221C6.2 15.5221 3.5 12.837 3.5 9.55525C3.5 6.27348 6.2 3.5884 9.5 3.5884C12.8 3.5884 15.5 6.27348 15.5 9.55525C15.5 12.837 12.8 15.5221 9.5 15.5221Z"
@@ -36,7 +38,7 @@
               </a>
             </li>
             <li class="user-menu-item">
-              <a href="#" class="user-menu-link-favorite">
+              <a href="#" class="user-menu-link-favorite" aria-label="Избранное">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M9.9 19C9.6 19 9.3 18.9 9.1 18.6C3.7 12.5 2.4 11.1 2.1 10.7C1.4 9.8 1 8.6 1 7.4C1 4.4 3.4 2 6.5 2C7.8 2 9 2.5 10 3.3C11 2.5 12.3 2 13.5 2C16.5 2 19 4.4 19 7.4C19 8.7 18.5 9.9 17.7 10.8L10.7 18.7C10.5 18.9 10.3 19 9.9 19ZM3.9 9.5C4.2 9.9 7.4 13.5 10 16.4L16.2 9.4C16.7 8.9 16.9 8.2 16.9 7.4C16.9 5.6 15.4 4.1 13.6 4.1C12.6 4.1 11.6 4.6 10.9 5.4C10.6 5.7 10.3 5.8 10 5.8C9.7 5.8 9.4 5.6 9.2 5.4C8.5 4.6 7.5 4.1 6.5 4.1C4.7 4.1 3.2 5.6 3.2 7.4C3.1 8.3 3.5 9 3.9 9.5C3.8 9.5 3.8 9.5 3.9 9.5Z"
@@ -54,7 +56,7 @@
       <main class="page-main">
         <section class="welcome">
           <h1 class="visually-hidden">Сайт города Седоны</h1>
-          <img class="welcome-image" src="./images/welcome.svg" width="458px" height="352px" alt="Welcome to Sedona">
+          <img class="welcome-image" src="./images/welcome.svg" width="458" height="352" alt="Приветствие">
         </section>
         <section class="reasons">
           <h2 class="visually-hidden">Причины посещения</h2>
@@ -162,12 +164,13 @@
             <a class="phone-button" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </div>
           <div class="footer-logo-block">
-            <a class="footer-logo-link" href="https://htmlacademy.ru/">
+            <a class="footer-logo-link" href="https://htmlacademy.ru/" aria-label="Ссылка академии">
               <svg xmlns="http://www.w3.org/2000/svg" width="115" height="34" fill="none">
                 <path fill="currentColor"
                   d="M0 13.256v2.6h2.5v-2.6H0ZM11.6 4.856c-1.6 0-2.8.7-3.6 1.7h-.1v-6.2h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2v-6.1c.1-3-1.8-4.9-4.5-4.9ZM26.6 5.156h-4.8v-3.7h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1v-5.7h4.8v-2ZM41.1 4.956c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1v-1.6H29v10.6h2v-5.4c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 13.056c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V.356h-2v12.7ZM28.9 20.056c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22.356c-.5-2.4-2.6-4.1-5.4-4.1-3.4 0-5.6 2.5-5.6 5.6 0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1c-.4 1.3-1.7 2.3-3.3 2.3-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1v-.2ZM55.1 20.056c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 20.156c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2v-15.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 18.256c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 18.256c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27.356l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z" />
               </svg>
             </a>
+          </div>
         </section>
       </footer>
     </div>
@@ -175,7 +178,8 @@
       <div class="modal-container">
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-          <button class="close-button" type="close">
+          <button class="close-button" type="button">
+            <span class="visually-hidden">Закрыть окно</span>
             <svg class="cross" width="15" height="15" viewBox="0 0 15 15" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -205,14 +209,16 @@
                 <label class="people-form" for="adult">Взрослые:</label>
                 <div class="container-number">
                   <button class="minus" type="button">
+                    <span class="visually-hidden">Уменьшить количество взрослых</span>
                     <svg class="less" width="20" height="20" viewBox="0 0 20 20" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M3 9V11H17V9H3Z" fill="currentColor" />
                     </svg>
-                    </svg>
                   </button>
-                  <input class="adult" type="number" min="0" id="adult" value="2">
+                  <input class="adult" type="number" name="adult" min="0" id="adult" value="2"
+                    placeholder="Количество взрослых">
                   <button class="plus" type="button">
+                    <span class="visually-hidden">Увеличить количество взрослых</span>
                     <svg class="more" width="20" height="20" viewBox="0 0 20 20" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" />
@@ -225,6 +231,7 @@
                   <label class="people-form" for="children">Дети:</label>
                   <span class="tultip">
                     <button class="button-tultip" type="button">
+                      <span class="visually-hidden">Дополнительная информация о детях</span>
                       <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="13" cy="13" r="13" fill="#83B3D3" />
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
@@ -240,13 +247,16 @@
                 </div>
                 <div class="container-number">
                   <button class="minus" type="button">
+                    <span class="visually-hidden">Уменьшить количество детей</span>
                     <svg class="less" width="20" height="20" viewBox="0 0 20 20" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M3 9V11H17V9H3Z" fill="currentColor" />
                     </svg>
                   </button>
-                  <input class="children" type="number" min="0" id="adult" value="2">
+                  <input class="children" type="number" name="children" min="0" id="children" value="2"
+                    aria-placeholder="Количество детей">
                   <button class="plus" type="button">
+                    <span class="visually-hidden">Увеличить количество детей</span>
                     <svg class="more" width="20" height="20" viewBox="0 0 20 20" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" />
@@ -260,7 +270,7 @@
         </section>
       </div>
     </div>
-    <script src="./scripts/script.js"></script>
+    <script src="./scripts/script.js">
     </script>
 
   </body>
