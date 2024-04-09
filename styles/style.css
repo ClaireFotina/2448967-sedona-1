@@ -232,7 +232,7 @@
   background-size: 100% 57px, cover;
   min-height: 352px;
   background-repeat: no-repeat, no-repeat;
-  background-position: left 0 bottom 0, center top;
+  background-position: left 0 bottom -1px, center top;
 }
 
 .visually-hidden {
