@@ -1432,6 +1432,10 @@
   background-color: #7db54f;
 }
 
+.green:disabled {
+  opacity: 0.1;
+}
+
 .four-stars-raiting {
   width: 140px;
   background-image: url("../images/star.svg"), url("../images/star.svg"), url("../images/star.svg"), url("../images/star.svg");
