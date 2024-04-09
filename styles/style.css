@@ -1342,20 +1342,18 @@
 }
 
 .hotel-details {
-  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
   text-transform: uppercase;
   background-color: #756157;
   box-sizing: border-box;
   color: #ffffff;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 20px;
   text-align: center;
   width: 140px;
   padding: 8px 19px;
   border-radius: 4px;
   text-decoration: none;
-  height: 36px;
   border: none;
 }
 
@@ -1378,21 +1376,18 @@
 }
 
 .hotel-favorites {
-  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
   border: none;
   text-transform: uppercase;
   background-color: #82b3d3;
   box-sizing: border-box;
   color: #ffffff;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
   width: 140px;
   padding: 8px 19px;
   border-radius: 4px;
   text-decoration: none;
-  height: 36px;
 }
 
 .hotel-favorites:hover {
