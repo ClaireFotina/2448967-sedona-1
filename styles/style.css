@@ -72,7 +72,7 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  width: 500px;
+  width: 462px;
 }
 
 .main-menu-link {
@@ -116,7 +116,7 @@
   padding-right: 69px;
   list-style: none;
   display: flex;
-  width: 380px;
+  width: 480px;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
@@ -186,8 +186,7 @@
 }
 
 .user-menu-item-button {
-  margin-left: 20px;
-  margin-top: 14px;
+  margin: 14px 0 14px 20px;
 }
 
 .user-menu-link-button {
@@ -1160,14 +1159,15 @@
 .found {
   padding: 0;
   margin: 0;
-  margin-top: 14px;
+  margin-top: 7px;
   font-weight: 700;
   font-size: 30px;
-  line-height: 20px;
+  line-height: 35px;
   text-transform: uppercase;
 }
 
 .select-control {
+  background-color: #ffffff;
   padding: 10px 108px 10px 19px;
   width: 293px;
   height: 48px;
@@ -1342,7 +1342,8 @@
 }
 
 .hotel-details {
-  font-size: 14px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
@@ -1376,7 +1377,8 @@
 }
 
 .hotel-favorites {
-  font-size: 14px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   border: none;
@@ -1385,7 +1387,7 @@
   box-sizing: border-box;
   color: #ffffff;
   width: 140px;
-  padding: 8px 19px;
+  padding: 8px 18px;
   border-radius: 4px;
   text-decoration: none;
 }
@@ -1892,6 +1894,10 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .plus {
