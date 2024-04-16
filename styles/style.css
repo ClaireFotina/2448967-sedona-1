@@ -194,7 +194,7 @@
   background-color: #756157;
   border-radius: 4px;
   text-decoration: none;
-  max-width: 162px;
+  max-width: 240px;
   box-sizing: border-box;
   font-size: 16px;
   font-weight: 700;
@@ -1162,7 +1162,7 @@
   margin-top: 7px;
   font-weight: 700;
   font-size: 30px;
-  line-height: 35px;
+  line-height: 36px;
   text-transform: uppercase;
 }
 
@@ -1352,7 +1352,7 @@
   color: #ffffff;
   text-align: center;
   width: 140px;
-  padding: 8px 19px;
+  padding: 8px 5px;
   border-radius: 4px;
   text-decoration: none;
   border: none;
@@ -1387,7 +1387,7 @@
   box-sizing: border-box;
   color: #ffffff;
   width: 140px;
-  padding: 8px 18px;
+  padding: 8px 5px;
   border-radius: 4px;
   text-decoration: none;
 }
@@ -1829,6 +1829,7 @@
   border-radius: 4px 0 0 4px;
   position: relative;
   cursor: pointer;
+  background-color: #f2f2f2;
 }
 
 .minus::after {
@@ -1909,6 +1910,7 @@ input[type=number] {
   border: none;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
+  background-color: #f2f2f2;
 }
 
 .plus::after {
